@@ -1,0 +1,42 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../fancy-carousel/fancy-carousel.html">
+
+<!--
+`lrndesign-imagecarousel`
+A LRN element
+
+@demo demo/index.html
+-->
+
+<dom-module id="lrndesign-imagecarousel">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>[[title]]</h2>
+    <fancy-carousel>
+  <img src="https://app-layout-assets.appspot.com/assets/bg1.jpg">
+  <img src="https://app-layout-assets.appspot.com/assets/bg2.jpg">
+  <img src="https://app-layout-assets.appspot.com/assets/bg3.jpg">
+  <img src="https://app-layout-assets.appspot.com/assets/bg4.jpg">
+</fancy-carousel>
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'lrndesign-imagecarousel',
+
+      properties: {
+        title: {
+          type: String,
+          value: 'lrndesign-imagecarousel',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
